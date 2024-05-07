@@ -10,7 +10,7 @@ namespace ClientLoanSystem
 {
     internal class AddClient
     {
-        private readonly densingdbEntities _context = new densingdbEntities();
+        private readonly densingdbEntities _context;
         private BindingSource _bindingSource;
         public AddClient()
         { }
@@ -25,6 +25,7 @@ namespace ClientLoanSystem
 
         public AddClient(BindingSource _bindingSource) : this()
         {
+            _context = new densingdbEntities();
             this._bindingSource = _bindingSource;
         }
 

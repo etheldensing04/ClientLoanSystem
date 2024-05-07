@@ -17,7 +17,7 @@ namespace ClientLoanSystem.Entities
         public int LoanID { get; set; }
         public int ClientId { get; set; }
         public double Loan_AMT { get; set; }
-        public double Interest { get; set; }
+        public Nullable<double> Interest { get; set; }
         public string Term { get; set; }
         public int NoOf_Payment { get; set; }
         public double Deduction { get; set; }
@@ -25,6 +25,6 @@ namespace ClientLoanSystem.Entities
         public double Receivable_AMT { get; set; }
         public double Total_Payable { get; set; }
         public System.DateTime Due_Date { get; set; }
-        public bool Status_Paid { get; set; }
+        public string Status_Paid { get; set; }
     }
 }

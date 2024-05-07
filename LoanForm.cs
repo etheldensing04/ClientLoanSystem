@@ -28,8 +28,10 @@ namespace ClientLoanSystem
 
         private void setSelectedClient()
         {
-            List<Loan> selectedClientData = db._con.Loans.Where(q => q.ClientId == 1).ToList();
+            List<Loan> selectedClientData = db._con.Loans.Where(q => q.ClientId == currentClientId).ToList();
             loanTable.DataSource = selectedClientData;
+
+            currentClientLabel.Text = $"Loan of Client ID #{currentClientId}";
         }
 
         private void LoanForm_Load(object sender, EventArgs e)
@@ -51,8 +53,19 @@ namespace ClientLoanSystem
 
         private void paidBtn_Click(object sender, EventArgs e)
         {
-            db.setPaidORUnpaid(currentClientId);
+            db.setPaidORUnpaid(getLoanId);
             setSelectedClient();
+        }
+
+        private int getLoanId;
+        private void loanTable_SelectionChanged(object sender, EventArgs e)
+        {
+            if (loanTable.SelectedRows.Count == 0)
+            {
+                return;
+            }
+
+            getLoanId = (int)loanTable.SelectedRows[0].Cells[0].Value;
         }
     }
 }

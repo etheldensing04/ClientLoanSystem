@@ -23,7 +23,7 @@ namespace ClientLoanSystem
 
         private void viewLoanBtn_Click(object sender, EventArgs e)
         {
-           LoanForm openLoan = new LoanForm(1);
+           LoanForm openLoan = new LoanForm(getSelectedId);
             openLoan.ShowDialog();
         }
 
@@ -72,6 +72,7 @@ namespace ClientLoanSystem
         {
             db = new AddClient(clientBindingSource);
             clientBindingSource.DataSource = db._con.Clients.ToList();
+            WindowState = FormWindowState.Maximized;
         }
 
 

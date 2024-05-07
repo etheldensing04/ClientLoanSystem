@@ -90,7 +90,7 @@ namespace ClientLoanSystem
             selectedClientLoan.Receivable_AMT = ReceivableAmount;
             selectedClientLoan.Total_Payable = TotalPayable;
             selectedClientLoan.Due_Date = dueDate;
-            selectedClientLoan.Status_Paid = false;
+            selectedClientLoan.Status_Paid = StatusPaid.Active.ToString();
 
             _con.Loans.Add(selectedClientLoan);
             _con.SaveChanges();
@@ -123,14 +123,14 @@ namespace ClientLoanSystem
             Loan selectedLoan = _con.Loans.Where(q => q.LoanID == loanId).FirstOrDefault();
 
             DialogResult result = MessageBox.Show(
-                $"Do you want to set {(selectedLoan.Status_Paid == true ? "Unpaid" : "Paid")} the loan ID {loanId}",
+                $"Do you want to set {(selectedLoan.Status_Paid == StatusPaid.Paid.ToString() ? "Active" : "Paid")} the loan ID {loanId}",
                 "Delete Confirmation",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question
             );
 
             if (result == DialogResult.Yes)
             {
-                selectedLoan.Status_Paid = (selectedLoan.Status_Paid == true) ? false : true;
+                selectedLoan.Status_Paid = (selectedLoan.Status_Paid == StatusPaid.Paid.ToString() ? "Active" : "Paid");
                 _con.SaveChanges();
             }
         }
