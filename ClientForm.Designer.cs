@@ -56,7 +56,7 @@
             // searchTextBox
             // 
             this.searchTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchTextBox.Location = new System.Drawing.Point(43, 46);
+            this.searchTextBox.Location = new System.Drawing.Point(345, 62);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(206, 26);
             this.searchTextBox.TabIndex = 0;
@@ -70,7 +70,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(804, 49);
             this.label1.TabIndex = 1;
-            this.label1.Text = "CLIEN LOAN MANAGEMENT SYSTEM\r\n";
+            this.label1.Text = "CLIENT LOAN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // clientTable
@@ -102,7 +102,7 @@
             // 
             this.addBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.addBtn.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addBtn.Location = new System.Drawing.Point(274, 21);
+            this.addBtn.Location = new System.Drawing.Point(156, 21);
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(96, 32);
             this.addBtn.TabIndex = 3;
@@ -114,7 +114,7 @@
             // 
             this.updateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.updateBtn.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateBtn.Location = new System.Drawing.Point(274, 59);
+            this.updateBtn.Location = new System.Drawing.Point(416, 21);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(96, 32);
             this.updateBtn.TabIndex = 4;
@@ -126,7 +126,7 @@
             // 
             this.deleteBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.deleteBtn.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteBtn.Location = new System.Drawing.Point(376, 21);
+            this.deleteBtn.Location = new System.Drawing.Point(274, 21);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(117, 32);
             this.deleteBtn.TabIndex = 5;
@@ -138,7 +138,7 @@
             // 
             this.viewLoanBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.viewLoanBtn.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewLoanBtn.Location = new System.Drawing.Point(376, 59);
+            this.viewLoanBtn.Location = new System.Drawing.Point(538, 21);
             this.viewLoanBtn.Name = "viewLoanBtn";
             this.viewLoanBtn.Size = new System.Drawing.Size(117, 32);
             this.viewLoanBtn.TabIndex = 6;
@@ -150,7 +150,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(39, 24);
+            this.label2.Location = new System.Drawing.Point(261, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 19);
             this.label2.TabIndex = 7;

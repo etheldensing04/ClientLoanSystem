@@ -31,7 +31,7 @@ namespace ClientLoanSystem
             List<Loan> selectedClientData = db._con.Loans.Where(q => q.ClientId == currentClientId).ToList();
             loanTable.DataSource = selectedClientData;
 
-            currentClientLabel.Text = $"Loan of Client ID #{currentClientId}";
+            currentClientLabel.Text = $"Loan of Client #{currentClientId}";
         }
 
         private void LoanForm_Load(object sender, EventArgs e)

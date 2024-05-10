@@ -46,6 +46,7 @@
             this.dueDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusPaidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loanBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.loanTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loanBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +59,7 @@
             this.currentClientLabel.Name = "currentClientLabel";
             this.currentClientLabel.Size = new System.Drawing.Size(1041, 56);
             this.currentClientLabel.TabIndex = 0;
-            this.currentClientLabel.Text = "Loan of Client ID";
+            this.currentClientLabel.Text = "Loan of Client ";
             this.currentClientLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // loanTable
@@ -95,7 +96,7 @@
             // 
             this.paidBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.paidBtn.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.paidBtn.Location = new System.Drawing.Point(439, 272);
+            this.paidBtn.Location = new System.Drawing.Point(16, 272);
             this.paidBtn.Name = "paidBtn";
             this.paidBtn.Size = new System.Drawing.Size(85, 53);
             this.paidBtn.TabIndex = 4;
@@ -107,9 +108,9 @@
             // 
             this.addLoanBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.addLoanBtn.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addLoanBtn.Location = new System.Drawing.Point(530, 272);
+            this.addLoanBtn.Location = new System.Drawing.Point(883, 272);
             this.addLoanBtn.Name = "addLoanBtn";
-            this.addLoanBtn.Size = new System.Drawing.Size(84, 53);
+            this.addLoanBtn.Size = new System.Drawing.Size(146, 53);
             this.addLoanBtn.TabIndex = 5;
             this.addLoanBtn.Text = "ADD LOAN";
             this.addLoanBtn.UseVisualStyleBackColor = false;
@@ -203,11 +204,22 @@
             // 
             this.loanBindingSource.DataSource = typeof(ClientLoanSystem.Entities.Loan);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(438, 286);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(143, 22);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "WELCOME <3";
+            // 
             // LoanForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1041, 332);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.addLoanBtn);
             this.Controls.Add(this.paidBtn);
             this.Controls.Add(this.loanTable);
@@ -223,6 +235,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.loanTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loanBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -245,5 +258,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn totalPayableDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dueDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn statusPaidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label1;
     }
 }

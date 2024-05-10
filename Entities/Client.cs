@@ -18,6 +18,6 @@ namespace ClientLoanSystem.Entities
         public string Firstname { get; set; }
         public string Lastname { get; set; }
         public string Residency { get; set; }
-        public Nullable<System.DateTime> Birthday { get; set; }
+        public System.DateTime Birthday { get; set; }
     }
 }

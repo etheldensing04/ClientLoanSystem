@@ -52,7 +52,7 @@
             // firstname_val
             // 
             this.firstname_val.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstname_val.Location = new System.Drawing.Point(66, 32);
+            this.firstname_val.Location = new System.Drawing.Point(109, 12);
             this.firstname_val.Name = "firstname_val";
             this.firstname_val.Size = new System.Drawing.Size(239, 26);
             this.firstname_val.TabIndex = 1;
@@ -60,7 +60,7 @@
             // lastname_val
             // 
             this.lastname_val.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastname_val.Location = new System.Drawing.Point(66, 84);
+            this.lastname_val.Location = new System.Drawing.Point(109, 44);
             this.lastname_val.Name = "lastname_val";
             this.lastname_val.Size = new System.Drawing.Size(239, 26);
             this.lastname_val.TabIndex = 3;
@@ -69,7 +69,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 61);
+            this.label2.Location = new System.Drawing.Point(12, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 22);
             this.label2.TabIndex = 2;
@@ -78,7 +78,7 @@
             // residency_val
             // 
             this.residency_val.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.residency_val.Location = new System.Drawing.Point(66, 136);
+            this.residency_val.Location = new System.Drawing.Point(109, 76);
             this.residency_val.Name = "residency_val";
             this.residency_val.Size = new System.Drawing.Size(239, 26);
             this.residency_val.TabIndex = 5;
@@ -87,7 +87,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 113);
+            this.label3.Location = new System.Drawing.Point(12, 76);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 22);
             this.label3.TabIndex = 4;
@@ -95,7 +95,7 @@
             // 
             // birthday_val
             // 
-            this.birthday_val.Location = new System.Drawing.Point(66, 190);
+            this.birthday_val.Location = new System.Drawing.Point(109, 108);
             this.birthday_val.Name = "birthday_val";
             this.birthday_val.Size = new System.Drawing.Size(239, 20);
             this.birthday_val.TabIndex = 6;
@@ -104,7 +104,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 165);
+            this.label4.Location = new System.Drawing.Point(12, 107);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 22);
             this.label4.TabIndex = 7;
@@ -114,7 +114,7 @@
             // 
             this.addBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.addBtn.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addBtn.Location = new System.Drawing.Point(311, 99);
+            this.addBtn.Location = new System.Drawing.Point(185, 149);
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(87, 36);
             this.addBtn.TabIndex = 8;
@@ -126,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 220);
+            this.ClientSize = new System.Drawing.Size(366, 203);
             this.Controls.Add(this.addBtn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.birthday_val);
@@ -137,9 +137,9 @@
             this.Controls.Add(this.firstname_val);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(419, 259);
+            this.MaximumSize = new System.Drawing.Size(382, 242);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(419, 259);
+            this.MinimumSize = new System.Drawing.Size(382, 242);
             this.Name = "AddClientForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AddClientForm";

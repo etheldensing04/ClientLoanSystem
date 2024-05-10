@@ -17,7 +17,7 @@ namespace ClientLoanSystem.Entities
         public int LoanID { get; set; }
         public int ClientId { get; set; }
         public double Loan_AMT { get; set; }
-        public Nullable<double> Interest { get; set; }
+        public double Interest { get; set; }
         public string Term { get; set; }
         public int NoOf_Payment { get; set; }
         public double Deduction { get; set; }

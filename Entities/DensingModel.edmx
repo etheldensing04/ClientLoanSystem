@@ -10,10 +10,10 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Firstname" Type="varchar" MaxLength="45" />
-          <Property Name="Lastname" Type="varchar" MaxLength="45" />
-          <Property Name="Residency" Type="varchar" MaxLength="200" />
-          <Property Name="Birthday" Type="date" />
+          <Property Name="Firstname" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="Lastname" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="Residency" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Birthday" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="Loan">
           <Key>
@@ -22,7 +22,7 @@
           <Property Name="LoanID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ClientId" Type="int" Nullable="false" />
           <Property Name="Loan_AMT" Type="float" Nullable="false" />
-          <Property Name="Interest" Type="float" />
+          <Property Name="Interest" Type="float" Nullable="false" />
           <Property Name="Term" Type="varchar" MaxLength="45" Nullable="false" />
           <Property Name="NoOf_Payment" Type="int" Nullable="false" />
           <Property Name="Deduction" Type="float" Nullable="false" />
@@ -30,7 +30,7 @@
           <Property Name="Receivable_AMT" Type="float" Nullable="false" />
           <Property Name="Total_Payable" Type="float" Nullable="false" />
           <Property Name="Due_Date" Type="date" Nullable="false" />
-          <Property Name="Status_Paid" Type="varchar" MaxLength="25" />
+          <Property Name="Status_Paid" Type="varchar" MaxLength="25" Nullable="false" />
         </EntityType>
         <EntityContainer Name="densingdbModelStoreContainer">
           <EntitySet Name="Client" EntityType="Self.Client" Schema="dbo" store:Type="Tables" />
@@ -49,10 +49,10 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Firstname" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
-          <Property Name="Lastname" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
-          <Property Name="Residency" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-          <Property Name="Birthday" Type="DateTime" Precision="0" />
+          <Property Name="Firstname" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="Lastname" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="Residency" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Birthday" Type="DateTime" Nullable="false" Precision="0" />
         </EntityType>
         <EntityType Name="Loan">
           <Key>
@@ -61,7 +61,7 @@
           <Property Name="LoanID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ClientId" Type="Int32" Nullable="false" />
           <Property Name="Loan_AMT" Type="Double" Nullable="false" />
-          <Property Name="Interest" Type="Double" />
+          <Property Name="Interest" Type="Double" Nullable="false" />
           <Property Name="Term" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
           <Property Name="NoOf_Payment" Type="Int32" Nullable="false" />
           <Property Name="Deduction" Type="Double" Nullable="false" />
@@ -69,7 +69,7 @@
           <Property Name="Receivable_AMT" Type="Double" Nullable="false" />
           <Property Name="Total_Payable" Type="Double" Nullable="false" />
           <Property Name="Due_Date" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="Status_Paid" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="Status_Paid" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
