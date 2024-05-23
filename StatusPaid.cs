@@ -8,8 +8,8 @@ namespace ClientLoanSystem
 {
     public enum StatusPaid
     {
-        Active,
+        Ongoing,
         Paid,
-        Late,
+        Penalized,
     }
 }

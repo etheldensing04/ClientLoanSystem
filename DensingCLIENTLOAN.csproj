@@ -95,6 +95,12 @@
     <Compile Include="Forms\AddLoanForm.Designer.cs">
       <DependentUpon>AddLoanForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SetStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SetStatusForm.Designer.cs">
+      <DependentUpon>SetStatusForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UpdateClientForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddLoanForm.resx">
       <DependentUpon>AddLoanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SetStatusForm.resx">
+      <DependentUpon>SetStatusForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UpdateClientForm.resx">
       <DependentUpon>UpdateClientForm.cs</DependentUpon>

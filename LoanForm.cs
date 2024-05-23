@@ -53,7 +53,13 @@ namespace ClientLoanSystem
 
         private void paidBtn_Click(object sender, EventArgs e)
         {
-            db.setPaidORUnpaid(getLoanId);
+            SetStatusForm getStatus = new SetStatusForm();
+
+            if (getStatus.ShowDialog() == DialogResult.OK)
+            {
+                db.SetStatus(getLoanId, getStatus.GetStatus);
+            }
+
             setSelectedClient();
         }
 
