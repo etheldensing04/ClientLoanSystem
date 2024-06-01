@@ -27,5 +27,6 @@ namespace ClientLoanSystem.Entities
     
         public virtual DbSet<Client> Clients { get; set; }
         public virtual DbSet<Loan> Loans { get; set; }
+        public virtual DbSet<Schedule> Schedules { get; set; }
     }
 }

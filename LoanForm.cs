@@ -73,5 +73,11 @@ namespace ClientLoanSystem
 
             getLoanId = (int)loanTable.SelectedRows[0].Cells[0].Value;
         }
+
+        private void loanTable_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ScheduleForm viewSchedule = new ScheduleForm();
+            viewSchedule.ShowDialog();
+        }
     }
 }
