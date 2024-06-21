@@ -39,9 +39,14 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Downloads\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -86,6 +91,12 @@
     <Compile Include="Entities\Schedule.cs">
       <DependentUpon>DensingModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddClientForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,12 +114,6 @@
     </Compile>
     <Compile Include="Forms\ScheduleForm.Designer.cs">
       <DependentUpon>ScheduleForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\SetStatusForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\SetStatusForm.Designer.cs">
-      <DependentUpon>SetStatusForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UpdateClientForm.cs">
       <SubType>Form</SubType>
@@ -131,6 +136,9 @@
     <EmbeddedResource Include="ClientForm.resx">
       <DependentUpon>ClientForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddClientForm.resx">
       <DependentUpon>AddClientForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,9 +147,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ScheduleForm.resx">
       <DependentUpon>ScheduleForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SetStatusForm.resx">
-      <DependentUpon>SetStatusForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UpdateClientForm.resx">
       <DependentUpon>UpdateClientForm.cs</DependentUpon>

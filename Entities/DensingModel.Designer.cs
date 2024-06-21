@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\FOR CLONE\Documents\ClientLoanSystem\Entities\DensingModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\FOR CLONE\source\repos\etheldensing04\ClientLoanSystem\Entities\DensingModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

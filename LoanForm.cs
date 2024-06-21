@@ -42,7 +42,7 @@ namespace ClientLoanSystem
 
         private void addLoanBtn_Click(object sender, EventArgs e)
         {
-            AddLoanForm newLoan = new AddLoanForm();
+            AddLoanForm newLoan = new AddLoanForm(currentClientId);
             if (newLoan.ShowDialog() == DialogResult.Yes)
             {
                 AddLoan getNewLoan = new AddLoan(currentClientId, newLoan.LoanAmt, newLoan.Interest, newLoan.SelectedTerm, newLoan.NoOfPayment, newLoan.Deduction);
@@ -53,14 +53,8 @@ namespace ClientLoanSystem
 
         private void paidBtn_Click(object sender, EventArgs e)
         {
-            SetStatusForm getStatus = new SetStatusForm();
-
-            if (getStatus.ShowDialog() == DialogResult.OK)
-            {
-                db.SetStatus(getLoanId, getStatus.GetStatus);
-            }
-
-            setSelectedClient();
+            ScheduleForm s = new ScheduleForm(getLoanId,currentClientId);
+            s.ShowDialog();
         }
 
         private int getLoanId;
@@ -76,8 +70,7 @@ namespace ClientLoanSystem
 
         private void loanTable_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            ScheduleForm viewSchedule = new ScheduleForm();
-            viewSchedule.ShowDialog();
+        
         }
     }
 }

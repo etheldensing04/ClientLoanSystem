@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.currentClientLabel = new System.Windows.Forms.Label();
             this.loanTable = new System.Windows.Forms.DataGridView();
+            this.paidBtn = new System.Windows.Forms.Button();
+            this.addLoanBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.loanIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loanAMTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,9 +47,6 @@
             this.dueDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusPaidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loanBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.paidBtn = new System.Windows.Forms.Button();
-            this.addLoanBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.loanTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loanBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -92,6 +92,40 @@
             this.loanTable.TabIndex = 1;
             this.loanTable.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.loanTable_CellDoubleClick);
             this.loanTable.SelectionChanged += new System.EventHandler(this.loanTable_SelectionChanged);
+            // 
+            // paidBtn
+            // 
+            this.paidBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.paidBtn.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paidBtn.Location = new System.Drawing.Point(16, 272);
+            this.paidBtn.Name = "paidBtn";
+            this.paidBtn.Size = new System.Drawing.Size(85, 53);
+            this.paidBtn.TabIndex = 4;
+            this.paidBtn.Text = "View Schedule";
+            this.paidBtn.UseVisualStyleBackColor = false;
+            this.paidBtn.Click += new System.EventHandler(this.paidBtn_Click);
+            // 
+            // addLoanBtn
+            // 
+            this.addLoanBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.addLoanBtn.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addLoanBtn.Location = new System.Drawing.Point(883, 272);
+            this.addLoanBtn.Name = "addLoanBtn";
+            this.addLoanBtn.Size = new System.Drawing.Size(146, 53);
+            this.addLoanBtn.TabIndex = 5;
+            this.addLoanBtn.Text = "ADD LOAN";
+            this.addLoanBtn.UseVisualStyleBackColor = false;
+            this.addLoanBtn.Click += new System.EventHandler(this.addLoanBtn_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(438, 286);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(143, 22);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "WELCOME <3";
             // 
             // loanIDDataGridViewTextBoxColumn
             // 
@@ -180,40 +214,6 @@
             // loanBindingSource
             // 
             this.loanBindingSource.DataSource = typeof(ClientLoanSystem.Entities.Loan);
-            // 
-            // paidBtn
-            // 
-            this.paidBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.paidBtn.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.paidBtn.Location = new System.Drawing.Point(16, 272);
-            this.paidBtn.Name = "paidBtn";
-            this.paidBtn.Size = new System.Drawing.Size(85, 53);
-            this.paidBtn.TabIndex = 4;
-            this.paidBtn.Text = "PAID";
-            this.paidBtn.UseVisualStyleBackColor = false;
-            this.paidBtn.Click += new System.EventHandler(this.paidBtn_Click);
-            // 
-            // addLoanBtn
-            // 
-            this.addLoanBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.addLoanBtn.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addLoanBtn.Location = new System.Drawing.Point(883, 272);
-            this.addLoanBtn.Name = "addLoanBtn";
-            this.addLoanBtn.Size = new System.Drawing.Size(146, 53);
-            this.addLoanBtn.TabIndex = 5;
-            this.addLoanBtn.Text = "ADD LOAN";
-            this.addLoanBtn.UseVisualStyleBackColor = false;
-            this.addLoanBtn.Click += new System.EventHandler(this.addLoanBtn_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(438, 286);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 22);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "WELCOME <3";
             // 
             // LoanForm
             // 
