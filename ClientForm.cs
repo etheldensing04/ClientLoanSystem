@@ -102,5 +102,10 @@ namespace ClientLoanSystem
         {
             db.searchClient(searchTextBox.Text.Trim());
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

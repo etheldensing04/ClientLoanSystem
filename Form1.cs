@@ -19,7 +19,6 @@ namespace ClientLoanSystem
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
         private Form activeform = null;
         private void openChildForm(Form childform)
@@ -37,14 +36,9 @@ namespace ClientLoanSystem
             childform.Show();
         }
 
-        private void homeBtn_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void memberBtn_Click(object sender, EventArgs e)
-        {
-            openChildForm(new ClientForm()); 
+            openChildForm(new ClientForm());
         }
     }
 }
